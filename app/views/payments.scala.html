@@ -1,0 +1,50 @@
+@(message: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">-->
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+        <title>Payment Terminal</title>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <section class="intro" id="page-intro">
+                <header role="banner">
+                    <h1>@message</h1>
+                </header>
+            </section>
+        </div>
+        <div>
+            @helper.form(action = routes.PaymentsController.submitPayment()) {
+                <title>Payment Info</title>
+                <label>Name</label>
+                <input type="text" name="Name" /><br/><br/>
+                <label>Address</label>
+                <input type="text" name="Address Line 1" /><br/><br/>
+                <label>City</label>
+                <input type="text" name="City" /><br/><br/>
+                <label>State</label>
+                <input type="text" name="State" /><br/><br/>
+                <label>Zip Code</label>
+                <input type="text" name="Zip Code" /><br/><br/>
+                <label>Amount</label>
+                <input type="text" name="Amount" /><br/><br/>
+                <label>Card Number</label>
+                <input type="text" name="CC Number" /><br/><br/>
+                <label>Exp Date</label>
+                <input type="text" name="Exp Date" /><br/><br/>
+                <label>CVV</label>
+                <input type="text" name="CVV" /><br/><br/>
+                <label>Card Type</label>
+                <input type="text" name="Method of Payment" /><br/><br/>
+                <label>Report Group</label>
+                <input type="text" name="Report Group" /><br/><br/>
+                <label>Order ID</label>
+                <input type="test" name="Order ID" /><br/><br/>
+
+                <input type="submit" value="Submit" />
+            }
+        </div>
+    </body>
+</html>

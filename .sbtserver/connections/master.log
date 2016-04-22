@@ -1,0 +1,7 @@
+New log file opened at Wed Apr 20 22:12:58 EDT 2016 by 14566@cyclistix
+Taking next connection to: 52666
+New client attempting to connect on port: 33697-52666
+  Address = /127.0.1.1:52666
+This client on port 33697 has uuid c7773f18-a329-4a83-b4aa-89d0f6f5d119 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-c7773f18-a329-4a83-b4aa-89d0f6f5d119
+Taking next connection to: 52666

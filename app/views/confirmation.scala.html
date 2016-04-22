@@ -1,0 +1,13 @@
+@(message: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmation</title>
+</head>
+<body>
+  <h1>Success!</h1>
+  <div>@content</div>
+  <button id="btn-back" onclick="location.href = '/payments';">Back to Payments</button>
+</body>
+</html>
